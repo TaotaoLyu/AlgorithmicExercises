@@ -57,15 +57,16 @@
             "name": "C/C++: g++.exe 构建和调试活动文件",
             "type": "cppdbg",
             "request": "launch",
-            "externalConsole": true,
             // "program": "${fileDirname}\\Binary\\${fileBasenameNoExtension}.exe",
             // "args":[],
+            // "externalConsole": false,
             "program": "C:\\Windows\\system32\\cmd.exe",
             "args": [
                 "/V:on",//延迟环境变量更新 配合！使用
                 "/C",   //把后面的值当成多个参数，会再次进行解析，不加的话看成一个参数
                 "${fileDirname}\\Binary\\${fileBasenameNoExtension}.exe && (set \"exitCode=0\" & echo. & echo Program executed successfully. & echo Exit code: !exitCode!) || (set \"exitCode=!ERRORLEVEL!\" & echo. & echo Program execution failed.  & echo Exit code: !exitCode!) & pause"
             ],
+            "externalConsole": true,
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
