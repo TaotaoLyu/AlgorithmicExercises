@@ -1,6 +1,5 @@
 // https://ac.nowcoder.com/acm/contest/1032/D
 
-
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -57,19 +56,3 @@ int main()
     }     
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
